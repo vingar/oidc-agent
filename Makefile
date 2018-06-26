@@ -48,10 +48,10 @@ oidcdir:
 	@echo "Created oidc dir"
 
 dependecies: 
-	@[ -d $(LIBDIR)/jsmn ] || git clone https://github.com/zserge/jsmn.git $(LIBDIR)/jsmn 
-	@[ -f $(LIBDIR)/jsmn/libjsmn.a ] || (cd $(LIBDIR)/jsmn && make)
-	@git submodule init
-	@git submodule update
+	#@[ -d $(LIBDIR)/jsmn ] || git clone https://github.com/zserge/jsmn.git $(LIBDIR)/jsmn
+	#@[ -f $(LIBDIR)/jsmn/libjsmn.a ] || (cd $(LIBDIR)/jsmn && make)
+	#@git submodule init
+	#@git submodule update
 	@cd $(LIBDIR)/list && make
 	@echo "Dependecies OK"
 
