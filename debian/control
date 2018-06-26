@@ -4,18 +4,17 @@ Section: misc
 Priority: optional
 Build-Depends: make (>= 4), 
                debhelper (>= 9),
-               libcurl4-openssl-dev (>= 7.38.0),
-               libsodium-dev (>= 1.0.11),
+               git,
                help2man (>= 1.46.4),
-               libmicrohttpd-dev (>= 0.9.37)
+               libcurl4-openssl-dev (>= 7.38.0),
+               libmicrohttpd-dev (>= 0.9.37),
+               libsodium-dev (>= 1.0.11),
+               libjsmn
 Standards-Version: 4.0.0
 
 Package: oidc-agent
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-                libsodium18 (>= 1.0.11),
-                libcurl3 (>= 7.38) | libcurl4 (>= 7.38),
-                libmicrohttpd10 (>= 0.9.37) | libmicrohttpd12 (>=0.9.37)
 Description: Commandline tool for obtaining OpenID Connect Access tokens on the commandline
  This tool consists of four programs:
    - oidc-agent that handles communication with the OIDC provider
