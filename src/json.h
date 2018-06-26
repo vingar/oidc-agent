@@ -4,7 +4,8 @@
 #include "oidc_error.h"
 #include "oidc_utilities.h"
 
-#include "../lib/jsmn/jsmn.h"
+//#include "../lib/jsmn/jsmn.h"
+#include <jsmn.h>
 #include "../lib/list/src/list.h"
 
 struct key_value {
