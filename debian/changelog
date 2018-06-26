@@ -1,4 +1,4 @@
-oidc-agent (1.2.4) UNRELEASED; urgency=medium
+oidc-agent (1.2.5) UNRELEASED; urgency=medium
 
   [ Marcus hardt ]
   * Trying to fix debuild messages
@@ -24,5 +24,6 @@ oidc-agent (1.2.4) UNRELEASED; urgency=medium
   [ Marcus Hardt ]
   * Add IAM of DEEP to issuer.conf
   * Also accept libcurl4 as a dependency
+  * Use build requirements from (new) package jsmn
 
- -- Marcus Hardt <hardt@kit.edu>  Tue, 05 Jun 2018 13:40:47 +0200
+ -- Marcus Hardt <hardt@kit.edu>  Tue, 26 Jun 2018 10:13:27 +0200
