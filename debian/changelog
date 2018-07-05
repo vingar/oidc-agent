@@ -1,4 +1,4 @@
-oidc-agent (1.2.5) UNRELEASED; urgency=medium
+oidc-agent (1.2.7) UNRELEASED; urgency=medium
 
   [ Marcus hardt ]
   * Trying to fix debuild messages
@@ -26,4 +26,14 @@ oidc-agent (1.2.5) UNRELEASED; urgency=medium
   * Also accept libcurl4 as a dependency
   * Use build requirements from (new) package jsmn
 
- -- Marcus Hardt <hardt@kit.edu>  Tue, 26 Jun 2018 10:13:27 +0200
+  [ Gabriel Zachmann ]
+  * Adds documentation notes on expiring refresh tokens 
+
+  [ Gabriel Zachmann ]
+  * Adds possibility to build the C-API as static library
+  * oidc-token now uses this library
+
+  [ Gabriel Zachmann ]
+  * fixed segmentation fault for an unchecked file existence
+
+ -- Gabriel Zachmann <gabriel.zachmann@kit.edu>  Thu, 05 Jul 2018 08:00:03 +0200
